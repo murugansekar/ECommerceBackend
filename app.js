@@ -41,6 +41,12 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
+
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname,`public/${req.url}`))
+});
+
+
 Order.belongsTo(User, { constraints: true, onDelete: 'CASCADE' })
 //constraint can be removed.
 Product.belongsTo(User, { constraints: true, onDelete: 'CASCADE' });

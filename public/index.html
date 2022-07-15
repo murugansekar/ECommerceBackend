@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="task14.js" defer></script>    
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo"> E-commerce</a>
+            <a href="./home.html"> Home</a>
+            <a href="#" class="store"> Store</a>
+            <a href="./about.html"> About Us</a>
+            <a href="./orders.html" id="ordersPage"> Orders </a>
+            <i class='bx bx-shopping-bag' id="cart-icon">Cart</i>
+            <div class="cart">
+                <h2 class="cart-title"> CART </h2>
+                <div class="cart-content">
+                 
+                </div>
+                <div class="paginationCart" id="paginationCart">
+                
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy"> PURCHASE </button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+        
+    </header>
+    <section class="shop conatiner">
+        <h1>The Greengineerz</h1>
+        <h2 class = "section-title">Shop Product</h2>
+        <div class = "shop-content" id="shopping">
+            
+        </div>
+        <!-- 
+        <div class = "shop-content" id="shopping">
+            <div class="product-box" id ="p1">
+                <img src="img/p1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Red Cup (gift wrapped)</h2>
+                <span class="price">$35</span>
+                <button  id="btn1" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p2">
+                <img src="img/p2.jpg" alt="" class="product-img">
+                <h2 class="product-title">white Cup</h2>
+                <span class="price">$40</span>
+                <button id="btn2" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p3">
+                <img src="img/p3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Valentine's Cup</h2>
+                <span class="price">$15</span>
+                <button id="btn3" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p4">
+                <img src="img/p4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Candles</h2>
+                <span class="price">$5</span>
+                <button id="btn4" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p5">
+                <img src="img/p5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Chair</h2>
+                <span class="price">$50</span>
+                <button id="btn5" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p6">
+                <img src="img/p6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Pen</h2>
+                <span class="price">$10</span>
+                <button id="btn6" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p7">
+                <img src="img/p7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shirt</h2>
+                <span class="price">$80</span>
+                <button id="btn7" class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product-box" id="p8">
+                <img src="img/p8.jpg" alt="" class="product-img">
+                <h2 class="product-title">clock</h2>
+                <span class="price">$60</span>
+                <button id="btn8" class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    -->
+    </section>
+    <div id="toastContainer"></div>
+
+    <section class="pagination" id="pagination">
+        
+    </section>
+    <footer>
+        <div class="footer">
+            <h1>The Greengineerz</h1>
+            <h3> Contact Us </h3>
+        </div>
+        <div class="footer-items">
+            <ul>
+                <li><a href="https://www.youtube.com"><img src="./img/utube.png" alt=""></a></li>
+                <li><a href="https://facebook.com"><img src="./img/fb.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="./img/insta.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+</body>
+</html>
