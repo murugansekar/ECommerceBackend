@@ -1,0 +1,35 @@
+What is a server?
+Server is like a laptop without GUI which has terminal to compile and run our code. Mostly it has Linux or Ubuntu. Servers are rented to us by AWS, Azure and GCP. We open ports to connect to servers configured form AWS.
+
+What are the different steps for deploying AWS?
+*Signup AWS
+*AWS free tier
+*Backend Ready - move all secrets to .env file
+*AWS - go and buy free
+*Configure server: Install Node,Sql server, Git
+*Get your code from Github and clone it.
+*Test code
+
+What is an EC2 instance?
+EC2 instance is a virtual machine or server to deploy our applications.
+It has private and public key.
+
+Answer the following question
+
+What are the steps to make the backend ready for deployment?
+Moving sensitive data to .env file and then pushing to git and cloning it in EC2
+
+Move all the db credentials to the .env folder and dont care about the other credential which are there.
+Done
+
+Explain each and every step for connecting RDS to EC2 instance.
+Modifying the security group of RDS to except the security group of EC2 instance
+
+Explain the steps for connecting mysqlworkbench to RDS Database
+With plus symbol need to add ssh hostname & password with pem file, sql hostname and password, test connection, craete schema
+
+How do we integrate backend to frontend.
+Replacing all localhost with EC2 server ip
+
+What is the strategy we use for deploying frontend.
+By moving frontend inside public folder of backend and calling routes to it
