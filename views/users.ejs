@@ -1,0 +1,24 @@
+<body>
+  <header>
+    <h1>Appointment Booking</h1>
+  </header>
+  <form action="/addnewusers" method="GET">
+    <button type="submit" value="Add Appointment"></button>
+  </form>
+  <% if (users.length > 0) { %>
+    <% for (let user of users) { %>
+    <%= user.name %>
+    <%= user.email %>
+    <%= user.pnumber %>
+    </             
+    <div class="card__actions">
+    <a href="/editUser/<%= user.id %>" class="btn">Edit</a>
+    <a href="/deleteUser/<%= user.id %>" class="btn">Delete</a>
+    </div>
+    <br>
+    <% }} %>
+     
+</body>
+
+                        
+          

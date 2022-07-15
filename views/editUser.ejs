@@ -1,0 +1,23 @@
+<body>
+    <header>
+      <h1>Appointment Booking</h1>
+    </header>
+      <form id="my-form" action="/editUser/<%= User.id %>" method="POST">
+        <div class="msg"></div>
+        <div>
+          <label for="name"> Name : </label>
+          <input type="text" id="name" name="name" value="<%= User.name %>">
+      
+          <label for="email"> Email : </label>
+          <input type="text" id="email" name="email" value="<%= User.email %>">
+          
+          <label for="pnumber"> Phone : </label>
+          <input type="text" id="pnumber" name="pnumber" value="<%= User.pnumber %>">
+          
+        </div>
+        <br>
+        <input type="submit" value="Update Appointment">
+      </form>
+      <div id="output"></div>
+      <br>
+</body>
